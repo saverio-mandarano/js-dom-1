@@ -24,7 +24,10 @@ btn.addEventListener(`click`, function(){
 
 function lightSwitcher (offImg, onImg){
     if (lamp.src.includes('white_lamp')) {
-        lamp.src = 'img/yellow_lamp.png'; 
+        lamp.src = `img/yellow_lamp.png`; 
+    }
+    else{
+        lamp.src = `img/white_lamp.png`;
     }
 
 }
