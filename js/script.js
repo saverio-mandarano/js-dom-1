@@ -9,8 +9,6 @@
 // Al secondo click la lampadina si spegne e nel bottone compare la scritta "Accendi"
 // E così via...
 
-// Per fare questo bonus potremmo aver bisogno di del metodo string.includes() 
-
 
 const lamp = document.getElementById(`lampOff`)
 const btn = document.getElementById(`btnOnOff`);
@@ -22,12 +20,13 @@ btn.addEventListener(`click`, function(){
 
 
 
-function lightSwitcher (offImg, onImg){
-    if (lamp.src.includes('white_lamp')) {
-        lamp.src = `img/yellow_lamp.png`; 
+function lightSwitcher (offImgName, onImgName){
+
+    if (lamp.src.includes(offImgName)) {
+        lamp.src = `img/${onImgName}.png`; 
     }
     else{
-        lamp.src = `img/white_lamp.png`;
+        lamp.src = `img/${offImgName}.png`;
     }
 
 }
