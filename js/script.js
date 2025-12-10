@@ -12,7 +12,7 @@
 
 const lamp = document.getElementById(`lampOff`)
 const btn = document.getElementById(`btnOnOff`);
-console.log(lamp.src);
+//console.log(lamp.src);
 
 btn.addEventListener(`click`, function(){
     lightSwitcher(`white_lamp`,`yellow_lamp`);
@@ -24,11 +24,11 @@ function lightSwitcher (offImgName, onImgName){
 
     if (lamp.src.includes(offImgName)) {
         lamp.src = `img/${onImgName}.png`; 
-        btn.innerHTML = `Spegni`;
+        btn.innerHTML = `Turn Off`;
     }
     else{
         lamp.src = `img/${offImgName}.png`;
-        btn.innerHTML = `Accendi`;
+        btn.innerHTML = `Turn On`;
     }
 
 }
