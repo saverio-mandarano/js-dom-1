@@ -21,5 +21,5 @@ btn.addEventListener(`click`, function(){
 
 
 //funzione
-function lightSwitcher (){}
+function lightSwitcher (offImg, onImg){}
 
