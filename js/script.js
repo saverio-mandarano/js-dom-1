@@ -14,12 +14,18 @@
 
 const lamp = document.getElementById(`lampOff`)
 const btn = document.getElementById(`btnOnOff`);
+//console.log(lamp.src);
 
 btn.addEventListener(`click`, function(){
     lightSwitcher(`white_lamp`,`yellow_lamp`);
 });
 
 
-//funzione
-function lightSwitcher (offImg, onImg){}
+
+function lightSwitcher (offImg, onImg){
+    if (lamp.src.includes('white_lamp')) {
+        lamp.src = 'img/yellow_lamp.png'; 
+    }
+
+}
 
