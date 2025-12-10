@@ -15,4 +15,10 @@
 const lamp = document.getElementById(`lampOff`)
 const btn = document.getElementById(`btnOnOff`);
 
+btn.addEventListener(`click`, function(){
+    
+
+});
+
+function lightSwitcher (){}
 
